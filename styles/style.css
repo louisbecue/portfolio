@@ -1,0 +1,381 @@
+:root {
+    --bg-color: #f1f1f1d8;
+    --text-color: #273042;
+    --accent-color: #041759;
+    --secondary-bg: #c7c6c6ac;
+    --card-bg: #ffffffd2;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --secondary-bg: #1a1a1a;
+    --card-bg: #333333;
+    --card-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    list-style-type: none;
+}
+
+li {
+    background-color: var(--secondary-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+li:hover {
+    transform: translateY(-3px);
+    background-color: var(--secondary-bg);
+}
+
+header {
+    background-color: var(--text-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.intro {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.intro h1 {
+    margin: 0;
+    color: var(--accent-color);
+    font-size: 2.5rem;
+}
+
+.intro p {
+    margin: 1rem 0 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.text-container {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.text-container p {
+    margin: 1rem 0 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    /* font-weight: bold; */
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    color: var(--accent-color);
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.project-link {
+    color: var(--accent-color);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.5rem;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skill {
+    background-color: var(--secondary-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill:hover {
+    transform: translateY(-3px);
+}
+
+.carousel-container {
+    position: relative;
+    padding: 0 40px;
+}
+
+.carousel {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.project {
+    flex: 0 0 100%;
+    background-color: var(--card-bg);
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.project-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+
+.project-tag {
+    background-color: var(--secondary-bg);
+    padding: 0.25rem 0.5rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.project-tag:hover {
+    transform: translateY(-3px);
+}
+
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    right: -20px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-control {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: opacity 0.3s;
+}
+
+.carousel-control:hover {
+    opacity: 0.8;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#dark-mode-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    background-color: var(--bg-color);
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#dark-mode-toggle:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+.education {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.education-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.education-content {
+    flex: 1;
+}
+
+.education h3 {
+    margin-top: 0;
+    color: var(--accent-color);
+}
+
+.education-date {
+    font-style: italic;
+    font-size: 0.9em;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+
+.contact-item {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: transform 0.3s, opacity 0.3s;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.contact-item:hover {
+    transform: translateY(-3px);
+    opacity: 0.8;
+}
+
+.intro h1 {
+    font-size: 5rem;
+}
+
+.intro p {
+    font-size: 3rem;
+}
+
+.education h3, .education h4, .education p {
+    margin: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .education {
+        flex-direction: column;
+    }
+
+    .education-image {
+        margin: 0 auto 1rem;
+    }
+
+    .contact-info {
+        flex-wrap: wrap;
+    }
+}
+
