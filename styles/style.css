@@ -1,9 +1,11 @@
+@import url('cabinet-grotesk.css');
+
 :root {
     --bg-color: #f1f1f1d8;
     --text-color: #273042;
     --accent-color: #041759;
     --secondary-bg: #c7c6c6ac;
-    --card-bg: #ffffffd2;
+    --card-bg: #ffffff9f;
     --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -36,6 +38,7 @@ ul {
 li {
     background-color: var(--secondary-bg);
     padding: 0.5rem 1rem;
+    font-size: 0.9rem;
     border-radius: 20px;
     transition: transform 0.3s;
     display: flex;
@@ -153,7 +156,6 @@ p {
     align-items: center;
     gap: 0.5rem;
 }
-
 .skill:hover {
     transform: translateY(-3px);
 }
@@ -226,7 +228,7 @@ p {
 }
 
 .carousel-control {
-    background-color: var(--accent-color);
+    /* background-color: var(--accent-color); */
     color: #ffffff;
     border: none;
     width: 40px;
@@ -236,7 +238,7 @@ p {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 25%;
     transition: opacity 0.3s;
 }
 

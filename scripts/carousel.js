@@ -45,7 +45,7 @@ filterButtons.forEach(button => {
 function startAutoScroll() {
     autoScrollInterval = setInterval(() => {
         nextBtn.click();
-    }, 1700);
+    }, 2500);
 }
 
 function stopAutoScroll() {

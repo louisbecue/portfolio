@@ -88,7 +88,7 @@
             <span id="skill-c" class="skill"><i class="fab fa-c"></i> C</span>
             <span id="skill-haskell" class="skill"><i class="fab fa-haskell"></i> Haskell</span>
             <span id="skill-javascript" class="skill"><i class="fab fa-js"></i> JavaScript</span>
-            <span id="skill-ruby" class="skill"><i class="fab fa-ruby"></i> Ruby</span>
+            <!-- <span id="skill-ruby" class="skill"><i class="fab fa-ruby"></i> Ruby</span> -->
             <span id="skill-php" class="skill"><i class="fab fa-php"></i> PHP</span>
             <span id="skill-html" class="skill"><i class="fab fa-html5"></i> HTML/CSS</span>
             <span id="skill-react" class="skill"><i class="fab fa-react"></i> React</span>
@@ -107,64 +107,87 @@
     </section>
     <section id="projects">
         <h2>Projets</h2>
-        <!-- <div class="filter-buttons">
+        <div class="filter-buttons">
             <button class="filter-btn" data-filter="all">All</button>
             <button class="filter-btn" data-filter="web">Web</button>
             <button class="filter-btn" data-filter="ai">AI</button>
-            <button class="filter-btn" data-filter="mobile">Mobile</button>
-            <button class="filter-btn" data-filter="python">Python</button>
-        </div> -->
+            <button class="filter-btn" data-filter="crypto">Cryptograhie</button>
+            <button class="filter-btn" data-filter="poo">POO</button>
+            
+        </div>
         <div class="carousel-container">
             <div class="carousel">
                 <div class="carousel-inner">
-                    <div class="project" data-category="web">
-                        <h2 class="project-title">Personal Blog</h2>
-                        <p>A responsive blog website built with HTML, CSS, and JavaScript.</p>
-                        <img src="img\B9714728014Z.1_20180212122648_000+G3KAMAJD0.2-0.jpg" alt="Prout" class="project-image">
+                    <div class="project" data-category="poo">
+                        <h2 class="project-title">Zombicide</h2>
+                        <p>Projet en groupe de 4, sur 4 mois. Le jeu de zombicide se deroule pendant une apocalypse zombies ! 
+                        Il faut trouvez des armes, éliminez des zombies, gagnez de l’expérience ... Pour suvivre au phase d'attaque des zombies.
+                        </p>
+                        <img src="img/zombicide.jpg" alt="zombicide" class="project-image">
                         <div class="project-tags">
-                            <span class="project-tag"><i class="fab fa-html5"></i> HTML/CSS</span>
-                            <span class="project-tag"><i class="fab fa-js"></i> JavaScript</span>
+                            <span id="skill-java" class="skill"><i class="fab fa-java"></i> Java</span>
                         </div>
-                        <a href="https://github.com/louisbecue" target="_blank" class="project-link"><i class="fab fa-github"></i> Voir sur GitHub</a>
+                        <a href="https://github.com/louisbecue/Zombicide" target="_blank" class="project-link"><i class="fab fa-github"></i> Voir sur GitHub</a>
                     </div>
-                    <div class="project" data-category="python">
-                        <h2 class="project-title">Image Classifier</h2>
-                        <p>An AI model that classifies images using TensorFlow and Python.</p>
-                        <img src="img\default.jpg" alt="Image Classifier" class="project-image">
+                    <div class="project" data-category="ai">
+                        <h2  class="project-title">Introduction à l'Intelligence Artificielle</h2>
+                        <p>Quelques algorithmes de parcours de graphes, de régression linéaire, descente de gradiant ...</p>
+                        <img src="img/ia.jpg" alt="ia" class="project-image">
                         <div class="project-tags">
-                            <span class="project-tag">Python</span>
-                            <span class="project-tag">TensorFlow</span>
-                            <span class="project-tag">AI</span>
+                            <span id="skill-python" class="skill"><i class="fab fa-python"></i> Python</span>
+                            <span id="skill-sklearn" class="skill"></i> Sklearn</span>
+                            <span id="skill-numpy" class="skill"></i> Numpy</span>
+                            <span id="skill-micrograd" class="skill"></i> Micrograd</span>
                         </div>
-                        <a href="https://github.com/louisbecue" target="_blank" class="project-link"><i class="fab fa-github"></i> Voir sur GitHub</a>
-                    </div>
-                    <div class="project" data-category="mobile">
-                        <h2 class="project-title">Weather App</h2>
-                        <p>A mobile app built with React Native that displays weather information.</p>
-                        <img src="img\default.jpg" alt="Weather App" class="project-image">
-                        <div class="project-tags">
-                            <span class="project-tag">React Native</span>
-                            <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">API</span>
-                        </div>
-                        <a href="https://github.com/louisbecue" target="_blank" class="project-link"><i class="fab fa-github"></i> Voir sur GitHub</a>
+                        <a href="https://github.com/louisbecue/Introduction-intelligence-artificielle" target="_blank" class="project-link"><i class="fab fa-github"></i> Voir sur GitHub</a>
                     </div>
                     <div class="project" data-category="web">
-                        <h2  class="project-title">Task Manager</h2>
-                        <p>A web application for managing tasks and to-do lists using React and Node.js.</p>
-                        <img src="img\default.jpg" alt="Task Manager" class="project-image">
+                        <h2 class="project-title">Ma Petite Compo</h2>
+                        <p>Jeu sur forme de site Web qui reprends le principe du jeu Mon petit gazon.</p>
+                        <img src="img/mpc.png" alt="mpc" class="project-image">
                         <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">Node.js</span>
-                            <span class="project-tag">MongoDB</span>
+                            <span id="skill-javascript" class="skill"><i class="fab fa-js"></i> JavaScript</span>
+                            <span id="skill-html" class="skill"><i class="fab fa-html5"></i> HTML/CSS</span>
+                        </div>
+                        <a href="https://github.com/louisbecue/Ma-Petite-Compo" target="_blank" class="project-link"><i class="fab fa-github"></i> Voir sur GitHub</a>
+                    </div>
+                    <div class="project" data-category="crypto">
+                        <h2  class="project-title">Cryptograhie</h2>
+                        <p>Quelques algorithmes de cryptographie.</p>
+                        <img src="img/cryptographie.jpg" alt="cryptographie" class="project-image">
+                        <div class="project-tags">
+                            <span id="skill-python" class="skill"><i class="fab fa-python"></i> Python</span>
+                        </div>
+                        <a href="https://github.com/louisbecue/Cryptograhie" target="_blank" class="project-link"><i class="fab fa-github"></i> Voir sur GitHub</a>
+                    </div>
+                    <div class="project" data-category="web">
+                        <h2 class="project-title">Portofolio</h2>
+                        <p>Le site sur le quelle vous êtes.</p>
+                        <img src="img\default.jpg" alt="Portofolio" class="project-image">
+                        <div class="project-tags">
+                            <span id="skill-javascript" class="skill"><i class="fab fa-js"></i> JavaScript</span>
+                            <span id="skill-html" class="skill"><i class="fab fa-html5"></i> HTML/CSS</span>
                         </div>
                         <a href="https://github.com/louisbecue" target="_blank" class="project-link"><i class="fab fa-github"></i> Voir sur GitHub</a>
+                    </div>
+                    <div class="project" data-category="web">
+                        <h2 class="project-title">Application météo</h2>
+                        <p>Le site web qui permet de comparer des données méterologiques entre plusieurs villes.</p>
+                        <img src="img/meteo.png" alt="Portofolio" class="project-image">
+                        <div class="project-tags">
+                            <span id="skill-javascript" class="skill"><i class="fab fa-js"></i> JavaScript</span>
+                            <span id="skill-html" class="skill"><i class="fab fa-html5"></i> HTML/CSS</span>
+                            <span id="skill-react" class="skill"><i class="fab fa-react"></i> React</span>
+                            <span id="skill-nodejs" class="skill"><i class="fab fa-node-js"></i> Node.js</span>
+                        </div>
+                        <!-- <a href="https://github.com/louisbecue" target="_blank" class="project-link"><i class="fab fa-github"></i> Voir sur GitHub</a> -->
                     </div>
                 </div>
             </div>
             <div  class="carousel-controls">
-                <button class="carousel-control" id="prevBtn" aria-label="Previous project">&#8249;</button>
-                <button class="carousel-control" id="nextBtn" aria-label="Next project">&#8250;</button>
+                <button class="carousel-control" id="prevBtn" aria-label="Previous project"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                <button class="carousel-control" id="nextBtn" aria-label="Next project"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                </button>
             </div>
         </div>
     </section>
