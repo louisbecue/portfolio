@@ -54,5 +54,9 @@ function stopAutoScroll() {
 
 carousel.addEventListener('mouseenter', stopAutoScroll);
 carousel.addEventListener('mouseleave', startAutoScroll);
+prevBtn.addEventListener('mouseenter', stopAutoScroll);
+prevBtn.addEventListener('mouseleave', startAutoScroll);
+nextBtn.addEventListener('mouseenter', stopAutoScroll);
+nextBtn.addEventListener('mouseleave', startAutoScroll);
 
 startAutoScroll();
