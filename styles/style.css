@@ -211,6 +211,11 @@ p {
     gap: 0.5rem;
 }
 
+.download-cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .project-tag:hover {
     transform: translateY(-3px);
